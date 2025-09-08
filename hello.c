@@ -1,13 +1,11 @@
+# define _CRT_SECURE_NO_WARNINGS /*scanf() 함수의 오류를 해결하기 위함*/
 # include <stdio.h>
 
 int main(void) {
-	int x, y;
-	x = 20, y = 10;
-	printf("두 수의 합: %d\n", x + y);
-	printf("두 수의 차: %d\n", x - y);
-	printf("두 수의 곱: %d\n", x * y);
-	printf("두 수의 몫: %d\n", x / y);
-	printf("두 수의 나눗셈: %f\n", (float)x / (float)y); // 이건 덤. (float)x는 x를 실수형으로 변환.
-
+	int x;
+	printf("정수를 입력하시오 : ");
+	scanf("%d", &x);
+	// scanf_s("%d", &x);
+	printf("입력한 정수 = %d\n", x);
 	return 0;
 }
