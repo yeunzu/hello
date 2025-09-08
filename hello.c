@@ -1,22 +1,13 @@
 # include <stdio.h>
 
 int main(void) {
-	//int x;
-	//int y;
-	//int sum;
-	//x = 100;
-	//y = 200;
-	//sum = x + y;
-	//printf("두 수의 합 : %d\n", sum);
-	//return 0;
+	int x, y;
+	x = 20, y = 10;
+	printf("두 수의 합: %d\n", x + y);
+	printf("두 수의 차: %d\n", x - y);
+	printf("두 수의 곱: %d\n", x * y);
+	printf("두 수의 몫: %d\n", x / y);
+	printf("두 수의 나눗셈: %f\n", (float)x / (float)y); // 이건 덤. (float)x는 x를 실수형으로 변환.
 
-	int x, y, sum;
-	x = 100, y = 200;
-	/*
-	* 이건 컴파일 안된다.
-	* x, y = 100, 200; (파이썬에서나 가능한 짓)
-	*/
-	sum = x + y;
-	printf("두 수의 합 : %d \n", sum);
 	return 0;
 }
